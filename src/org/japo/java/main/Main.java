@@ -28,21 +28,15 @@ public class Main {
             = new Scanner(System.in, "Windows-1252")
                     .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
         try {
             System.out.print("Letra DNI....:");
-            char letra_dni = SCN.nextLine().charAt(0);
-            System.out.printf("Letra DNI....:%C%n", letra_dni);
+            char letraDni = SCN.nextLine().charAt(0);
+            System.out.printf("Letra DNI....:%C%n", letraDni);
         } catch (Exception e) {
             System.out.println("ERROR: Entrada incorrecta.");
         } finally {
-            
-
         }
     }
-
 }
